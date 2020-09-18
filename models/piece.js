@@ -10,9 +10,9 @@ var pieceSchema = new mongoose.Schema({
   price: Number, //opt
   sold: Boolean,
   buyer: String, //opt
-  category: String,
-  metal: String,
-  stone: String, //opt
+  categories: [String],
+  metals: [String],
+  stones: [String], //opt
   length: Number, //opt
   weight: Number,
   appraisal: Boolean,

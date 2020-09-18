@@ -22,9 +22,9 @@ export const add_piece = async (req, res, next) => {
         price: req.body.price,
         sold: req.body.sold || false,
         buyer: req.body.buyer || "",
-        category: req.body.category || "",
-        metal: req.body.metal || "",
-        stone: req.body.stone || "",
+        categories: req.body.categories || [],
+        metals: req.body.metals || [],
+        stones: req.body.stones || [],
         length: req.body.length || 0,
         weight: req.body.weight || 0,
         appraisal: req.body.appraisal || false,
@@ -37,8 +37,7 @@ export const add_piece = async (req, res, next) => {
         if (err) {
           console.log(err);
         } else {
-          //TODO: change this to the "edit item" route at some point
-          res.redirect("/pieces.json");
+          res.send(JSON.stringify(newPiece));
         }
       });
     });

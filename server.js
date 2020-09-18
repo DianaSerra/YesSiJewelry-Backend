@@ -9,7 +9,7 @@ mongoose.connect("mongodb://localhost/pieces");
 const app = express();
 
 app.use(morgan("combined"));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 
 //Handle/route
 app.use("/", router);

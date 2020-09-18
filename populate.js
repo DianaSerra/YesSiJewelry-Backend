@@ -8,8 +8,8 @@ const pieces = [
     imageURL: "https://i.ibb.co/L0X2JfR/ID001.jpg",
     price: 1000.0, //opt
     sold: false,
-    category: "Necklace",
-    metal: "18k Gold",
+    categories: ["Necklace"],
+    metals: ["18k Gold"],
     length: 16.5, //opt
     appraisal: false,
     instaURL: "https://www.instagram.com/p/B6OrGQtHkf9/", //opt
@@ -22,9 +22,9 @@ const pieces = [
     price: 1000.0, //opt
     sold: true,
     buyer: "Random Buyer", //opt
-    category: "Necklace",
-    metal: "18k Gold",
-    stone: "Pearl", //opt
+    categories: ["Necklace"],
+    metals: ["18k Gold"],
+    stones: ["Pearl"], //opt
     length: 18.3, //opt
     weight: 7.1,
     appraisal: false,
